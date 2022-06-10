@@ -8,11 +8,11 @@ const themeDir = fileURLToPath(new URL('./', import.meta.url))
 const resolveThemeDir = (path: string) => resolve(themeDir, path)
 
 const components = [
-  {
-    prefix: '',
-    path: resolveThemeDir('./components/app'),
-    global: true,
-  },
+  // {
+  //   prefix: '',
+  //   path: resolveThemeDir('./components/app'),
+  //   global: true,
+  // },
   {
     prefix: '',
     path: resolveThemeDir('./components/content'),
@@ -26,9 +26,10 @@ const components = [
 ]
 
 export default defineNuxtConfig({
-  // Extends `@docus/base`
-  // extends: [resolveThemeDir('../@docus/base')],
-  extends: ['./node_modules/@docus/docs-theme'],
+  // Extends `@docus/docs-theme`
+  // extends: ['./node_modules/@docus/docs-theme'],
+  extends: [resolveThemeDir('../../@docus/docs-theme')],
+  
   modules: [],
 
   components,
