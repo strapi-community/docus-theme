@@ -1,0 +1,21 @@
+{
+  "name": "@strapi-community/docus-theme",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@docus/docs-theme": "npm:@docus/docs-theme-edge@latest",
+    "@docus/github": "npm:@docus/github-edge@latest",    
+    "@docus/base": "npm:@docus/base-edge@latest"
+  },
+  "devDependencies": {
+    "nuxt": "^3.0.0-rc.3"
+  },
+  "peerDependencies": {
+    "nuxt": "^3.0.0-rc.3"
+  }
+}
