@@ -34,6 +34,12 @@ export default defineNuxtConfig({
 
   components,
   theme,
+  
+  vite:{
+    optimizeDeps: {
+      include: ['mermaid/dist/mermaid']
+    }
+  },
 
   tailwindcss: {
     config: {
