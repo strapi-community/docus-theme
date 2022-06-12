@@ -34,8 +34,11 @@ export default defineNuxtConfig({
 
   components,
   theme,
-  
-  vite:{
+
+  vite:  {
+    build: {
+      chunkSizeWarningLimit: Infinity
+    },
     optimizeDeps: {
       include: ['mermaid/dist/mermaid']
     }

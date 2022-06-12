@@ -19,3 +19,9 @@ const { page, theme } = useDocus()
     </ContentRenderer>
   </div>
 </template>
+
+<style>
+.nuxt-progress {
+  background: repeating-linear-gradient(to right,#AF9EFF 0%,#8E75FF 50%,#603DFF 100%) !important;
+}
+</style>
